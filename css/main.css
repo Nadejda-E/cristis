@@ -1,0 +1,400 @@
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+.hidden,
+[hidden] {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.sr-only {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+/* ---------------------------------------- */
+
+html {
+    font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.25;
+
+    background-color: #fff;
+    color: #000;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container * {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    padding: 0 20px;
+}
+
+.header {
+    background-color: #ddcdcd;
+}
+
+.header .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.main {
+    margin: 30px 0;
+}
+
+.main-nav {
+    margin-top: 20px;
+}
+
+.main-nav-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 320px;
+}
+
+.main-nav-item {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.main-nav-item:first-child {
+    margin-left: 0;
+}
+
+.main-nav-item:last-child {
+    margin-right: 0;
+}
+
+.main-nav-url {
+    font-size: .8125rem;
+    line-height: 1.692307692307692;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.main-nav-url,
+.main-nav-url:visited {
+    color: #606060;
+}
+
+.main-nav-url.current {
+    color: #1abb9c;
+}
+
+.page-title {
+    font-size: 2.1875rem;
+    line-height: 1;
+
+    margin: 0 0 15px;
+}
+
+.intro {
+    margin-bottom: 35px;
+}
+
+.slick-slider {
+    margin: 0;
+    padding: 0;
+}
+
+.slick-img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+.slick-prev {
+    left: 0;
+    z-index: 2;
+}
+
+.slick-next {
+    right: 0;
+    z-index: 2;
+}
+
+.slick-next,
+.slick-prev {
+    width: 40px;
+    height: 40px;
+    border-radius: 0;
+}
+
+.slick-prev::before,
+.slick-next::before {
+    font-size: 30px;
+}
+
+.services-title,
+.projects-title {
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto 20px;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.375;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.devider-wrap {
+    position: relative;
+    display: inline-block;
+    padding: 0 25px;
+    background-color: #fff;
+}
+
+.devider::before {
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    content: "";
+    width: 100%;
+    border-bottom: 2px solid #e7e7e7;
+}
+
+.services-list,
+.projects-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.service {
+    max-width: 480px;
+    margin: 0 auto 20px;
+    padding: 10px;
+    border: 8px double #e1e1e1;
+    text-align: center;
+    font-size: .875rem;
+    color: #7a7a7a;
+}
+
+.service-title,
+.project-title {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.625;
+    color: #606060;
+}
+
+.project-title {
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.project {
+    max-width: 380px;
+    margin: 0 auto 20px;
+    padding: 10px;
+    text-align: center;
+    font-size: .875rem;
+    color: #7a7a7a;
+}
+
+.project img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.footer {
+    background-color: #373737;
+    color: #f0f0f0;
+
+    padding-top: 40px;
+}
+
+.footer a,
+.footer a:visited {
+    color: #f0f0f0;
+}
+
+.footer a:hover {
+    text-decoration: none;
+}
+
+.footer .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.address,
+.social {
+    list-style-type: none;
+    padding: 0;
+}
+
+.social {
+    display: flex;
+}
+
+.social-btn a {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 32px;
+    height: 32px;
+    margin-right: 15px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, .1);
+}
+
+.social-btn a:hover {
+    background-color: #ef5101;
+}
+
+.social-btn img {
+    max-width: 100%;
+    height: auto;
+}
+
+.copyright {
+    margin-top: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    text-align: center;
+
+    background-color: #000;
+    color: #fff;
+}
+
+.copyright strong {
+    padding-right: 30px;
+}
+
+.posts {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.posts-item {
+    margin: 0 0 15px;
+    padding: 0;
+}
+
+.posts-item time {
+    display: block;
+}
+
+@media (min-width: 767px) {
+    .header .wrapper {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .main-nav {
+        margin: 0;
+    }
+
+    .main-nav-list {
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .devider {
+        max-width: 40%;
+    }
+
+    .services-list,
+    .projects-list {
+        flex-direction: row;
+    }
+
+    .service,
+    .project {
+        margin-right: 20px;
+    }
+
+    .service:last-child,
+    .project:last-child {
+        margin-right: 0;
+    }
+
+    .footer .wrapper {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .footer .wrapper section {
+        max-width: 45%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1160px;
+    }
+
+    .footer .wrapper section {
+        max-width: 24%;
+    }
+}
